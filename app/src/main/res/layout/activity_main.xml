@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rootview"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/batcontainer"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tw_status_bar_height">
+
+                <com.mods.grx.circularbattery.GrxBatteryMeterView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="grxbattery" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tw_status_bar_height">
+
+                <com.mods.grx.circularbattery.GrxBatteryMeterView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="grxbattery1" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginTop="40dp"
+                    android:text="Darkness Lighter"
+                    android:layout_weight="1.0"
+                    android:id="@+id/buttonlighter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_marginTop="40dp"
+                    android:text="Update Options"
+                    android:layout_weight="1.0"
+                    android:id="@+id/update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_weight="1.0"
+                    android:layout_marginTop="40dp"
+                    android:text="Darkness Darker"
+                    android:id="@+id/buttondarker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
